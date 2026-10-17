@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>John Roger | HTML Web Developer</title>
+<meta name="description" content="Portfolio of John Roger — an aspiring HTML Web Developer from Panagudi, Tamil Nadu." />
+
+<!-- Inline favicon (prevents ERR_FILE_NOT_FOUND for favicon.ico) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2300d9ff'/%3E%3Cstop offset='0.5' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='Poppins,sans-serif' font-size='52' font-weight='700' fill='white' text-anchor='middle'%3EJR%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ==================== PRELOADER ==================== -->
+<div id="preloader">
+  <div class="loader-ring">
+    <span class="loader-text">Loading Portfolio…</span>
+  </div>
+</div>
+
+<!-- ==================== SCROLL PROGRESS ==================== -->
+<div id="scrollProgress"></div>
+
+<!-- ==================== PARTICLES CANVAS ==================== -->
+<canvas id="particles"></canvas>
+
+<!-- ==================== CUSTOM CURSOR ==================== -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ==================== NAVBAR ==================== -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#home" class="logo" data-scroll>John<span>Roger</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-scroll>Home</a></li>
+      <li><a href="#about" class="nav-link" data-scroll>About</a></li>
+      <li><a href="#education" class="nav-link" data-scroll>Education</a></li>
+      <li><a href="#skills" class="nav-link" data-scroll>Skills</a></li>
+      <li><a href="#strengths" class="nav-link" data-scroll>Strengths</a></li>
+      <li><a href="#contact" class="nav-link" data-scroll>Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme (T)">🌙</button>
+      
+<a class="resume-btn"
+   id="resumeBtn"
+   href="john_roger_resume.pdf"
+   download="John-Roger-Resume.pdf"
+   title="Download my resume">
+  📄 Resume
+</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="hero-hello">Hello, I'm</p>
+      <h1 class="hero-name">John Roger</h1>
+      <h2 class="hero-role">
+        <span id="typed"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">
+        A motivated and enthusiastic aspiring web developer, passionate about
+        HTML and computer technology — committed to continuous learning and
+        building a successful career in IT.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary" data-scroll>Hire Me</a>
+        <a href="#skills" class="btn btn-ghost" data-scroll>View Skills</a>
+      </div>
+
+      <ul class="hero-contact">
+        <li>📞 <a href="tel:9514276719">9514276719</a></li>
+        <li>✉️ <a href="mailto:jr24102009@gmail.com">jr24102009@gmail.com</a></li>
+        <li>📍 Panagudi, Tamil Nadu</li>
+      </ul>
+    </div>
+
+    
+<div class="hero-avatar">
+  <div class="avatar-ring">
+    <img
+      src="john-roger.jpeg"
+      alt="John Roger Profile Photo"
+      class="profile-image"
+    />
+  </div>
+</div>
+
+  <a href="#about" class="scroll-down" aria-label="Scroll down" data-scroll><span></span></a>
+</section>
+
+<!-- ==================== ABOUT + STATS ==================== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title reveal">Career Objective</h2>
+
+    <div class="about-card reveal">
+      <p>
+        A motivated and enthusiastic aspiring web developer who is eager to build a
+        successful career in technology. Passionate about <strong>HTML</strong> and
+        computer technology, with a strong commitment to continuous learning and
+        skill development.
+      </p>
+      <p>
+        Seeking an opportunity to apply my knowledge, gain practical experience,
+        overcome new challenges, and contribute to organizational growth while
+        working toward my goal of becoming a skilled IT professional.
+      </p>
+    </div>
+
+    <div class="stats-grid reveal">
+      <div class="stat"><h3><span class="count" data-target="4">0</span></h3><p>Core Skills</p></div>
+      <div class="stat"><h3><span class="count" data-target="6">0</span></h3><p>Strengths</p></div>
+      <div class="stat"><h3><span class="count" data-target="100">0</span>%</h3><p>Commitment</p></div>
+      <div class="stat"><h3><span class="count" data-target="24">0</span>/7</h3><p>Learning Mode</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EDUCATION ==================== -->
+<section class="section section-alt" id="education">
+  <div class="container">
+    <h2 class="section-title reveal">Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>School Education</h3>
+          <h4>St. Ann's Matriculation Higher Secondary School</h4>
+          <p class="timeline-place">📍 Panagudi, Tamil Nadu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SKILLS ==================== -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section-title reveal">Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skills-bars reveal">
+        <div class="skill">
+          <div class="skill-head"><span>HTML</span><span>90%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Web Page Structure &amp; Design</span><span>80%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Basic Web Development</span><span>75%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Computer Knowledge</span><span>70%</span></div>
+          <div class="bar"><div class="bar-fill" data-width="70%"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-cards">
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>Web Development</h3>
+          <p>HTML, Basic Web Development</p>
+        </div>
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>Web Fundamentals</h3>
+          <p>Web Page Structure and Design</p>
+        </div>
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">💻</div>
+          <h3>Computer Skills</h3>
+          <p>Basic Computer Knowledge</p>
+        </div>
+        <div class="skill-card tilt reveal">
+          <div class="skill-icon">🚀</div>
+          <h3>Growth Mindset</h3>
+          <p>Always learning new tech</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee reveal">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>HTML</span><span class="star">★</span>
+        <span>Web Design</span><span class="star">★</span>
+        <span>Front-End</span><span class="star">★</span>
+        <span>Problem Solving</span><span class="star">★</span>
+        <span>Quick Learning</span><span class="star">★</span>
+        <span>Computer Tech</span><span class="star">★</span>
+        <span>Continuous Growth</span><span class="star">★</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STRENGTHS ==================== -->
+<section class="section section-alt" id="strengths">
+  <div class="container">
+    <h2 class="section-title reveal">Special Skills &amp; Strengths</h2>
+
+    <div class="strength-grid">
+      <div class="strength-card tilt reveal"><span>⚡</span><h3>Quick Learning</h3><p>Ability to pick up new concepts and technologies fast.</p></div>
+      <div class="strength-card tilt reveal"><span>🧠</span><h3>Problem Solving</h3><p>Analytical thinking to find simple, effective solutions.</p></div>
+      <div class="strength-card tilt reveal"><span>🎯</span><h3>Self-Motivation</h3><p>Dedicated and driven to improve every single day.</p></div>
+      <div class="strength-card tilt reveal"><span>📚</span><h3>Willingness to Learn</h3><p>Always open to new technologies and new challenges.</p></div>
+      <div class="strength-card tilt reveal"><span>😊</span><h3>Positive Attitude</h3><p>Growth mindset with a hardworking, responsible nature.</p></div>
+      <div class="strength-card tilt reveal"><span>🤝</span><h3>Commitment</h3><p>Committed to continuous learning and teamwork.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title reveal">Get In Touch</h2>
+    <p class="section-sub reveal">
+      I'm looking for an opportunity to apply my knowledge and gain practical experience.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-item" data-copy="9514276719" data-label="Phone number">
+          <span class="ci-icon">📞</span>
+          <div><h4>Phone</h4><p>9514276719</p></div>
+          <span class="copy-hint">click to copy</span>
+        </div>
+
+        <div class="contact-item" data-copy="jr24102009@gmail.com" data-label="Email">
+          <span class="ci-icon">✉️</span>
+          <div><h4>Email</h4><p>jr24102009@gmail.com</p></div>
+          <span class="copy-hint">click to copy</span>
+        </div>
+
+        <div class="contact-item" data-copy="Panagudi, Tamil Nadu, India" data-label="Location">
+          <span class="ci-icon">📍</span>
+          <div><h4>Location</h4><p>Panagudi, Tamil Nadu, India</p></div>
+          <span class="copy-hint">click to copy</span>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="field"><input type="text" id="name" placeholder="Your Name" required /></div>
+        <div class="field"><input type="email" id="email" placeholder="Your Email" required /></div>
+        <div class="field"><textarea id="message" rows="5" placeholder="Your Message" required></textarea></div>
+        <button type="submit" class="btn btn-primary full">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <p class="declaration">
+      <em>"I hereby declare that the information provided above is true to the best of my knowledge and belief."</em>
+    </p>
+    <p class="footer-name">— John Roger</p>
+    <p class="copyright">© <span id="year"></span> John Roger. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ==================== FLOATING WIDGETS ==================== -->
+<a class="whatsapp-float"
+   href="https://wa.me/919514276719?text=Hi%20John%2C%20I%20visited%20your%20portfolio!"
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.004 3C9.383 3 4 8.383 4 15.004c0 2.383.7 4.6 1.9 6.48L4 29l7.75-1.85A11.94 11.94 0 0 0 16.004 27C22.62 27 28 21.617 28 15.004 28 8.383 22.62 3 16.004 3zm0 2c5.5 0 10 4.5 10 10s-4.5 10-10 10c-1.9 0-3.7-.5-5.3-1.5l-.4-.25-4.6 1.1 1.1-4.4-.3-.4A9.93 9.93 0 0 1 6 15.004C6 9.5 10.5 5 16.004 5zm-4.5 5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.2 0 1.3 1 2.6 1.1 2.8.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.6.7.5 0 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.5-.3-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4z"/>
+  </svg>
+</a>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<div class="kbd-hint" title="Keyboard shortcuts">
+  <kbd>H</kbd> Home · <kbd>P</kbd> Print · <kbd>T</kbd> Theme · <kbd>C</kbd> Contact
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
